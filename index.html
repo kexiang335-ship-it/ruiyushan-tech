@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南京瑞雨山科技 | 探索未来可能</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --tech-blue: #007AFF;
+        }
+        body {
+            background: radial-gradient(circle at top right, #eef6ff 0%, #ffffff 50%, #f4f7ff 100%);
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+        }
+        .float-animation {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #1a1a1a 0%, #007AFF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 top-0 px-6 py-4">
+        <div class="max-w-7xl mx-auto glass-card rounded-2xl px-8 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center border border-dashed border-gray-400 text-[10px] text-gray-500">
+                    LOGO
+                </div>
+                <span class="text-xl font-bold tracking-tight text-gray-800">瑞雨山科技</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="#home" class="hover:text-blue-600 transition">首页</a>
+                <a href="#ai-manga" class="hover:text-blue-600 transition">AI 漫剧</a>
+                <a href="#about" class="hover:text-blue-600 transition">关于我们</a>
+                <button class="bg-black text-white px-5 py-2 rounded-full text-xs hover:bg-blue-600 transition-all">合作咨询</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-40 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="animate__animated animate__fadeInUp text-5xl md:text-7xl font-extrabold mb-6 gradient-text">
+                以技术之雨，<br>润泽智慧之山。
+            </h2>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s text-gray-500 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                南京瑞雨山科技有限公司致力于通过人工智能与前沿视觉技术，重新定义数字内容的生产边界。
+            </p>
+            <div class="animate__animated animate__fadeInUp animate__delay-1s flex justify-center space-x-4">
+                <div class="w-1 h-16 bg-gradient-to-b from-blue-500 to-transparent rounded-full mx-auto"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-manga" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-card rounded-[3rem] p-8 md:p-16 overflow-hidden relative">
+                <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-blue-600 font-bold tracking-widest text-sm">CORE PRODUCT</span>
+                        <h3 class="text-4xl font-bold mt-4 mb-6">AI 漫剧全栈展示区</h3>
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            我们将深度学习算法与动漫艺术融合，实现从剧本到画面的全自动化生成。每一帧都极具张力，每一秒都蕴含科技的温度。
+                        </p>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span> 高精渲染引擎</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span> 风格化迁移技术</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span> 动态分镜优化</li>
+                        </ul>
+                    </div>
+                    <div class="relative float-animation">
+                        <div class="aspect-[3/4] glass-card rounded-2xl rotate-3 scale-95 opacity-50 absolute inset-0"></div>
+                        <div class="aspect-[3/4] bg-gradient-to-br from-blue-100 to-white rounded-2xl shadow-2xl flex items-center justify-center overflow-hidden border border-white">
+                             <p class="text-gray-400 italic">AI 漫剧动态演示占位</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-blue-100 rounded-full blur-[100px] opacity-60"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-gray-100 text-center">
+        <p class="text-gray-400 text-sm italic">© 2026 南京瑞雨山科技有限公司 · 未来已来</p>
+    </footer>
+
+</body>
+</html>
