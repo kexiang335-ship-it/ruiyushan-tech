@@ -13,8 +13,8 @@
         .glass-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.8); transition: all 0.4s ease; }
         .glass-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); border-color: var(--tech-blue); }
         .hero-gradient { background: radial-gradient(circle at 50% 50%, #ffffff 0%, #eef6ff 100%); }
-        .btn-primary { background: linear-gradient(135deg, #007AFF 0%, #0055FF 100%); transition: all 0.3s ease; }
-        .btn-primary:hover { opacity: 0.9; transform: scale(1.05); }
+        .footer-link { color: #6b7280; transition: color 0.2s; font-size: 0.875rem; }
+        .footer-link:hover { color: var(--tech-blue); text-decoration: underline; }
     </style>
 </head>
 <body class="text-gray-900">
@@ -22,124 +22,127 @@
     <nav class="glass-nav fixed w-full z-50 top-0">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center shadow-lg text-white font-bold">R</div>
+                <div class="w-10 h-10 bg-black rounded-lg flex items-center justify-center text-white font-bold">R</div>
                 <div class="flex flex-col">
-                    <span class="text-xl font-bold tracking-wider leading-tight">瑞雨山科技</span>
-                    <span class="text-[10px] text-gray-400 tracking-widest uppercase">RuiYuShan Tech</span>
+                    <span class="text-lg font-bold tracking-tight">瑞雨山科技</span>
+                    <span class="text-[9px] text-gray-400 tracking-widest uppercase">RuiYuShan Tech</span>
                 </div>
             </div>
             <div class="hidden md:flex items-center space-x-10 text-sm font-medium text-gray-600">
                 <a href="#home" class="hover:text-blue-600 transition">首页</a>
-                <a href="#services" class="hover:text-blue-600 transition">业务领域</a>
+                <a href="#services" class="hover:text-blue-600 transition">解决方案</a>
                 <a href="#ai-manga" class="hover:text-blue-600 transition">AI 漫剧</a>
                 <a href="#about" class="hover:text-blue-600 transition">关于我们</a>
-                <a href="#contact" class="btn-primary text-white px-6 py-2 rounded-full">联系我们</a>
+                <button class="bg-black text-white px-6 py-2 rounded-full text-xs">即刻咨询</button>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="hero-gradient pt-44 pb-32 px-6 text-center overflow-hidden">
+    <section id="home" class="hero-gradient pt-44 pb-32 px-6 text-center">
         <div class="max-w-5xl mx-auto">
-            <span class="animate__animated animate__fadeInDown inline-block px-4 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-bold mb-6">NEXT-GEN AI SOLUTIONS</span>
-            <h1 class="animate__animated animate__fadeInUp text-5xl md:text-7xl font-extrabold mb-8 bg-clip-text text-transparent bg-gradient-to-b from-gray-900 to-gray-500">
-                探索AI与视觉艺术的<br>无限边界
+            <h1 class="animate__animated animate__fadeInUp text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter text-gray-900">
+                瑞雨润物<br><span class="text-blue-600 italic">智领未来</span>
             </h1>
-            <p class="animate__animated animate__fadeInUp animate__delay-1s text-gray-500 text-lg md:text-xl max-w-2xl mx-auto mb-12">
-                南京瑞雨山科技有限公司，以“智慧之雨”滋润行业土壤，助力企业实现从创意到视觉的数字化飞跃。
+            <p class="animate__animated animate__fadeInUp animate__delay-1s text-gray-500 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light">
+                南京瑞雨山科技有限公司：以顶尖 AI 技术为基石，深耕数字化内容生态。
             </p>
-            <div class="animate__animated animate__fadeInUp animate__delay-1s flex justify-center space-x-4">
-                <a href="#ai-manga" class="bg-black text-white px-8 py-3 rounded-full font-medium">了解 AI 漫剧</a>
-                <a href="#services" class="border border-gray-200 bg-white px-8 py-3 rounded-full font-medium hover:bg-gray-50 transition">核心业务</a>
-            </div>
         </div>
     </section>
 
-    <section id="services" class="py-24 px-6 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-16">
-                <h2 class="text-3xl font-bold mb-4">业务领域</h2>
-                <div class="w-12 h-1 bg-blue-600"></div>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass-card p-10 rounded-3xl">
-                    <div class="text-blue-600 text-4xl mb-6">✦</div>
-                    <h3 class="text-xl font-bold mb-4">算力优化方案</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">提供高性能、低成本的AI算力部署支持，助力企业快速构建自有模型能力。</p>
-                </div>
-                <div class="glass-card p-10 rounded-3xl border-blue-100 bg-blue-50/30">
-                    <div class="text-blue-600 text-4xl mb-6">⚡</div>
-                    <h3 class="text-xl font-bold mb-4">数字化转型</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">深度调研业务逻辑，通过技术手段优化生产流程，实现效率指数级提升。</p>
-                </div>
-                <div class="glass-card p-10 rounded-3xl">
-                    <div class="text-blue-600 text-4xl mb-6">✥</div>
-                    <h3 class="text-xl font-bold mb-4">定制化开发</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">针对特定垂直领域提供精准的代码与系统级开发服务，满足个性化商业需求。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="ai-manga" class="py-24 px-6 bg-gray-50">
-        <div class="max-w-7xl mx-auto glass-card rounded-[3rem] overflow-hidden flex flex-col md:flex-row">
+    <section id="ai-manga" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto glass-card rounded-[3rem] overflow-hidden flex flex-col md:flex-row shadow-2xl">
             <div class="md:w-1/2 p-12 md:p-20 flex flex-col justify-center">
-                <h2 class="text-4xl font-bold mb-6 text-gray-900">AI 漫剧生态</h2>
-                <p class="text-gray-600 mb-8 leading-relaxed">
-                    这是瑞雨山科技的核心技术底座。通过自研引擎，我们将传统漫剧制作周期缩短了 70%，同时保持了惊人的画面细节与艺术张力。
+                <div class="w-12 h-1 bg-blue-600 mb-8"></div>
+                <h2 class="text-4xl font-bold mb-6 text-gray-900">AI 漫剧全栈生态</h2>
+                <p class="text-gray-600 mb-10 leading-relaxed text-lg">
+                    我们通过自研的深度学习模型，实现了从脚本解析、风格化分镜到动态转场的全自动化生产，赋予传统动漫工业全新的生产力。
                 </p>
-                <div class="space-y-6">
-                    <div class="flex items-start">
-                        <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4 mt-1 text-xs">✓</div>
-                        <div><h4 class="font-bold">秒级分镜生成</h4><p class="text-sm text-gray-400">从剧本到初稿仅需数秒。</p></div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4 mt-1 text-xs">✓</div>
-                        <div><h4 class="font-bold">风格自由切换</h4><p class="text-sm text-gray-400">支持日漫、美漫、写实等多种风格迁移。</p></div>
-                    </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div><h4 class="font-bold text-blue-600">90%</h4><p class="text-xs text-gray-400 uppercase">效率提升</p></div>
+                    <div><h4 class="font-bold text-blue-600">4K</h4><p class="text-xs text-gray-400 uppercase">超清渲染</p></div>
                 </div>
             </div>
-            <div class="md:w-1/2 bg-gray-200 min-h-[400px] flex items-center justify-center relative bg-[url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000')] bg-cover bg-center">
-                <div class="absolute inset-0 bg-blue-900/10 hover:bg-transparent transition-all"></div>
-                <div class="glass-card px-6 py-3 rounded-full text-sm font-medium">预览视频加载中...</div>
+            <div class="md:w-1/2 min-h-[500px] bg-slate-900 relative flex items-center justify-center">
+                <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1635236066249-724338fa81bd?q=80&w=1000')] bg-cover bg-center"></div>
+                <div class="relative z-10 text-white text-center">
+                    <div class="w-20 h-20 rounded-full border border-white/30 flex items-center justify-center backdrop-blur-md cursor-pointer hover:scale-110 transition">
+                        <div class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[15px] border-l-white border-b-[10px] border-b-transparent ml-2"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="bg-white pt-20 pb-10 border-t border-gray-100 px-6">
+    <footer class="bg-white border-t border-gray-100 pt-24 pb-12 px-6">
         <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-4 gap-12 mb-16">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 mb-20">
                 <div class="col-span-2">
                     <div class="flex items-center space-x-3 mb-6">
-                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">R</div>
-                        <span class="text-lg font-bold tracking-tight">南京瑞雨山科技</span>
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">R</div>
+                        <span class="text-xl font-bold tracking-tight">瑞雨山科技</span>
                     </div>
-                    <p class="text-gray-400 text-sm max-w-sm leading-relaxed">
-                        坚持以技术驱动创意，致力于成为国内领先的AI内容生成方案提供商。我们在南京，面向未来。
+                    <p class="text-gray-400 text-sm leading-relaxed pr-8">
+                        总部位于江苏南京，专注于人工智能领域的技术创新与应用开发。我们致力于构建更智能、更高效的数字视觉未来。
                     </p>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-6">导航</h4>
-                    <ul class="text-gray-500 text-sm space-y-4">
-                        <li><a href="#home" class="hover:text-blue-600">返回顶部</a></li>
-                        <li><a href="#services" class="hover:text-blue-600">服务项目</a></li>
-                        <li><a href="#ai-manga" class="hover:text-blue-600">AI 产品</a></li>
+                    <h4 class="text-sm font-bold text-gray-900 mb-6 uppercase tracking-wider">核心技术</h4>
+                    <ul class="flex flex-col space-y-3">
+                        <li><a href="#" class="footer-link">AI 图像生成</a></li>
+                        <li><a href="#" class="footer-link">自然语言处理</a></li>
+                        <li><a href="#" class="footer-link">视频动态插帧</a></li>
+                        <li><a href="#" class="footer-link">大规模算力调度</a></li>
+                        <li><a href="#" class="footer-link">自研视觉模型</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-6">联系方式</h4>
-                    <ul class="text-gray-500 text-sm space-y-4">
-                        <li>江苏省南京市</li>
-                        <li>Email: contact@ruiyushan.com</li>
-                        <li>电话: 400-XXX-XXXX</li>
+                    <h4 class="text-sm font-bold text-gray-900 mb-6 uppercase tracking-wider">业务领域</h4>
+                    <ul class="flex flex-col space-y-3">
+                        <li><a href="#" class="footer-link">AI 漫剧制作</a></li>
+                        <li><a href="#" class="footer-link">数字化转型</a></li>
+                        <li><a href="#" class="footer-link">智能营销方案</a></li>
+                        <li><a href="#" class="footer-link">企业内训系统</a></li>
+                        <li><a href="#" class="footer-link">定制化App开发</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-gray-900 mb-6 uppercase tracking-wider">关于我们</h4>
+                    <ul class="flex flex-col space-y-3">
+                        <li><a href="#" class="footer-link">公司简介</a></li>
+                        <li><a href="#" class="footer-link">加入我们</a></li>
+                        <li><a href="#" class="footer-link">新闻动态</a></li>
+                        <li><a href="#" class="footer-link">合作伙伴</a></li>
+                        <li><a href="#" class="footer-link">投资者关系</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-gray-900 mb-6 uppercase tracking-wider">支持与合作</h4>
+                    <ul class="flex flex-col space-y-3">
+                        <li><a href="#" class="footer-link">技术文档</a></li>
+                        <li><a href="#" class="footer-link">API 接口</a></li>
+                        <li><a href="#" class="footer-link">在线客服</a></li>
+                        <li><a href="#" class="footer-link">举报中心</a></li>
+                        <li><a href="#" class="footer-link">联系邮箱</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="pt-8 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 space-y-4 md:space-y-0">
-                <p>© 2026 南京瑞雨山科技有限公司 版权所有</p>
-                <div class="flex space-x-6">
-                    <span>苏ICP备XXXXXXXX号</span>
-                    <a href="#" class="hover:text-blue-600">隐私政策</a>
-                    <a href="#" class="hover:text-blue-600">服务条款</a>
+
+            <div class="pt-8 border-t border-gray-50">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                    <div class="text-[11px] text-gray-400 space-y-1">
+                        <p>© 2026 南京瑞雨山科技有限公司 版权所有</p>
+                        <div class="flex flex-wrap gap-x-4">
+                            <span>苏ICP备2026XXXXXX号</span>
+                            <span class="flex items-center"><img src="https://img.alicdn.com/tfs/TB1.._qu7oQMeJjy1XaXXae1VXa-20-20.png" class="w-3 h-3 mr-1">苏公网安备 3201XXXXXXXX号</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-6 text-xs text-gray-400">
+                        <a href="#" class="hover:text-blue-600 transition">隐私权政策</a>
+                        <a href="#" class="hover:text-blue-600 transition">法律声明</a>
+                        <a href="#" class="hover:text-blue-600 transition">Cookie 设置</a>
+                        <span class="text-gray-200">|</span>
+                        <span class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>系统运行正常</span>
+                    </div>
                 </div>
             </div>
         </div>
